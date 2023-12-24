@@ -1,12 +1,12 @@
-import { CapacitorConfig } from '@capacitor/cli';
+import { CapacitorConfig } from "@capacitor/cli";
 
 const config: CapacitorConfig = {
-  appId: 'org.item.to.qr',
-  appName: 'item-to-qr',
-  webDir: 'out',
+  appId: "org.item.to.qr",
+  appName: "item-to-qr",
+  webDir: "out",
   server: {
-    androidScheme: 'https'
-  }
+    androidScheme: "https",
+  },
 };
 
 export default config;

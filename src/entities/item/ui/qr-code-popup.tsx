@@ -17,6 +17,7 @@ export const QRCodePopup: FC<Props> = ({ onClose, item }) => {
           value={JSON.stringify({
             id: item.id,
             someOtherData: "someOtherData",
+            isItemToQrJSON: true,
           })}
           size={400}
         />

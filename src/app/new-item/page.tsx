@@ -8,6 +8,7 @@ import { useStorageState } from "@/shared/hooks/use-storage-state";
 import { Item } from "@/entities/item/lib/types";
 import { useRouter } from "next/navigation";
 import { useItemsList } from "@/entities/item/lib/hooks";
+import Link from "next/link";
 
 export default function NewItem() {
   const router = useRouter();
@@ -42,9 +43,14 @@ export default function NewItem() {
         <TextField name="description" label="Description" />
         <TextField name="price" label="Price" />
         <TextField name="imageUrl" label="Image URL" />
-        <button type="submit" className={styles.button}>
-          Create
-        </button>
+        <div className={styles.buttons}>
+          <Link href="/" className={styles.backButton}>
+            Cancel
+          </Link>
+          <button type="submit" className={styles.submitButton}>
+            Create
+          </button>
+        </div>
       </Form>
     </Formik>
   );

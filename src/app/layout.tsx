@@ -26,6 +26,7 @@ export default function RootLayout({
         className={inter.className}
         style={{
           height: "100%",
+          position: "relative",
         }}
       >
         <main className={styles.main}>{children}</main>

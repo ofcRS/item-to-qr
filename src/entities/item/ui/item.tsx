@@ -6,6 +6,7 @@ import styles from "./item.module.css";
 import { useItemsList } from "@/entities/item/lib/hooks";
 import { useRouter } from "next/navigation";
 import { QRCodePopup } from "@/entities/item/ui/qr-code-popup";
+import Link from "next/link";
 
 export const ItemCard: FC<{ item: Item }> = ({ item }) => {
   const [, setItems] = useItemsList();
@@ -22,9 +23,9 @@ export const ItemCard: FC<{ item: Item }> = ({ item }) => {
         <div className={styles.imageWrapper}>
           <img className={styles.productImage} src={imageUrl} alt={title} />
         </div>
-        <a className={styles.title} href={`/item-details?id=${id}`}>
+        <Link className={styles.title} href={`/item-details?id=${id}`}>
           {title}
-        </a>
+        </Link>
         <p className={styles.description}>{description}</p>
         <div className={styles.price}>${price}</div>
         <button className={styles.button} onClick={() => setIsPopupOpen(true)}>

@@ -3,11 +3,12 @@ import { Item } from "./types";
 
 const initial: Item[] = [
   {
-    price: 19.99,
+    price: 299.99,
     id: 0,
-    description: "A nice hat",
+    description:
+      "An ethereal illustration of Yggdrasil, the immense tree from Norse mythology that connects the nine worlds. This artwork captures the magical essence of ancient sagas with Asgard's halls in the branches and the roots hinting at the well of Urd. Perfect for lovers of mythology and fantasy.",
     imageUrl: "https://i.imgur.com/AQ5cdke.png",
-    title: "Hat",
+    title: "Yggdrasil - The World Tree Illustration",
   },
 ];
 

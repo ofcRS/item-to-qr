@@ -6,11 +6,19 @@ import { useSearchParams } from "next/navigation";
 import { ItemCard } from "@/entities/item";
 import styles from "./item-details.module.css";
 import { useItemsList } from "@/entities/item/lib/hooks";
+import { redirect } from "next/navigation";
+import Link from "next/link";
+
 export default function ItemDetailsPage() {
   const [items] = useItemsList();
 
   const id = useSearchParams().get("id");
   let item = null;
+
+  if (!id) {
+    return redirect("/");
+  }
+
   if (id && items) {
     item = items.find((item) => `${item.id}` === id);
   }
@@ -22,6 +30,9 @@ export default function ItemDetailsPage() {
   return (
     <div className={styles.itemDetails}>
       <ItemCard item={item} />
+      <Link href="/" className={styles.button}>
+        Back
+      </Link>
     </div>
   );
 }

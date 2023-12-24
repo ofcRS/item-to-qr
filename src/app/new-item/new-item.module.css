@@ -6,7 +6,17 @@
   width: 100%;
 }
 
-.button {
+.buttons {
+  display: flex;
+  gap: 16px;
+  width: 100%;
+}
+
+.buttons > * {
+  flex: 1;
+}
+
+.submitButton {
   background-color: #4caf50;
   border: none;
   color: white;
@@ -15,7 +25,6 @@
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
   cursor: pointer;
   border-radius: 8px;
   box-shadow: 0 4px #999;
@@ -24,12 +33,39 @@
     box-shadow 0.3s ease;
 }
 
-.button:hover {
+.submitButton:hover {
   background-color: #45a049;
 }
 
-.button:active {
+.submitButton:active {
   background-color: #3e8e41;
+  box-shadow: 0 2px #666;
+  transform: translateY(2px);
+}
+
+.backButton {
+  background-color: #f44336;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 0 4px #999;
+  transition:
+    background-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.backButton:hover {
+  background-color: #d32f2f;
+}
+
+.backButton:active {
+  background-color: #c62828;
   box-shadow: 0 2px #666;
   transform: translateY(2px);
 }
