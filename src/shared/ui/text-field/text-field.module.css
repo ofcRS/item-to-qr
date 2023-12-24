@@ -1,0 +1,20 @@
+.textField {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.inputField {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.inputFieldFocus {
+  outline: none;
+  border-color: #007bff;
+}

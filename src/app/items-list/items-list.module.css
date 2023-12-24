@@ -1,0 +1,41 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 10px;
+  min-width: 400px;
+}
+
+.button {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: #333;
+  cursor: pointer;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  transition: all 0.2s ease-in-out;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.buttons {
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+
+  margin-top: 20px;
+}
+
+.buttons > * {
+  flex: 1;
+}
