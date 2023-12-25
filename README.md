@@ -16,7 +16,7 @@ To run the ItemToQR App locally on your device, follow these steps:
 1. **Install Dependencies:** Run `yarn` to install necessary dependencies.
 2. **Start the Server:**
     - For a development server, run `yarn dev`.
-    - For an Android device, use the `./build-and-run.sh` script.
+    - For an Android device, use the `./build-and-run.sh` script. This script initiates the emulator or a connected Android device and then launches the application.
 
 #### Download the App
 
