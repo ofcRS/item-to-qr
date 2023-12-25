@@ -20,7 +20,7 @@ To run the ItemToQR App locally on your device, follow these steps:
 
 #### Download the App
 
-- **Android:** [Download the Android APK](https://www.dropbox.com/scl/fi/lfsjp3y5dn79izk1bvp9i/app-debug.apk?rlkey=594yycwz0nbc4t8d0imf9pg52&dl=0)
+- **Android:** [Download the Android APK](https://www.dropbox.com/scl/fi/lfsjp3y5dn79izk1bvp9i/app-debug.apk?rlkey=594yycwz0nbc4t8d0imf9pg52&dl=1)
 - **iOS:** Not available
 
 ### Upcoming Enhancements (TODO)
