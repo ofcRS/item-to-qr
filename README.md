@@ -25,7 +25,7 @@ To run the ItemToQR App locally on your device, follow these steps:
 
 ### Screenshots
 
-![Item Card](https://i.imgur.com/K4kCnjY.jpg)
+<img src="https://i.imgur.com/K4kCnjY.jpg" alt="Item details" width="300px">
 
 ### Upcoming Enhancements (TODO)
 
