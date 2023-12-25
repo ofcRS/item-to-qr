@@ -30,7 +30,7 @@ export default function ItemDetailsPage() {
   return (
     <div className={styles.itemDetails}>
       <ItemCard item={item} />
-      <Link href="/" className={styles.button}>
+      <Link href="/items-list" className={styles.button}>
         Back
       </Link>
     </div>

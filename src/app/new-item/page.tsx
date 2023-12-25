@@ -35,7 +35,7 @@ export default function NewItem() {
             },
           ];
         });
-        router.push("/");
+        router.push("/items-list");
       }}
     >
       <Form className={styles.form}>
@@ -44,7 +44,7 @@ export default function NewItem() {
         <TextField name="price" label="Price" />
         <TextField name="imageUrl" label="Image URL" />
         <div className={styles.buttons}>
-          <Link href="/" className={styles.backButton}>
+          <Link href="/items-list" className={styles.backButton}>
             Cancel
           </Link>
           <button type="submit" className={styles.submitButton}>

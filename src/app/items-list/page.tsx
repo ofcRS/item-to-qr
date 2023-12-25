@@ -17,10 +17,16 @@ export default function ItemsList() {
         </li>
       ))}
       <div className={styles.buttons}>
-        <Link className={styles.button} href="../new-item">
-          New Item +
+        <Link
+          className={`${styles.bottomButton} ${styles.newItemButton}`}
+          href="../new-item"
+        >
+          New Item
         </Link>
-        <Link className={styles.button} href="../qr-scanner">
+        <Link
+          className={`${styles.bottomButton} ${styles.scanQrButton}`}
+          href="../qr-scanner"
+        >
           Scan QR
         </Link>
       </div>

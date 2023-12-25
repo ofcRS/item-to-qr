@@ -10,6 +10,30 @@ const initial: Item[] = [
     imageUrl: "https://i.imgur.com/AQ5cdke.png",
     title: "Yggdrasil - The World Tree Illustration",
   },
+  {
+    price: 349.99,
+    id: 1,
+    description:
+      "A mystic sword forged in the heart of a dying star, adorned with runes of power. Legend has it that the blade can cut through the fabric of reality itself, allowing its wielder to travel between different dimensions. A treasure coveted by warriors and mages alike.",
+    imageUrl: "https://i.imgur.com/aHEpOWu.png",
+    title: "Starforged Runeblade",
+  },
+  {
+    price: 415.5,
+    id: 2,
+    description:
+      "This ancient tome is bound in scales that shimmer with celestial light. Within its pages lie the secrets of the cosmos, penned by an archmage who vanished eons ago. It is said that those who read from it can harness the raw energies of creation.",
+    imageUrl: "https://i.imgur.com/Z5pFbS6.png",
+    title: "Tome of Cosmic Secrets",
+  },
+  {
+    price: 475.0,
+    id: 3,
+    description:
+      "A legendary hero known as the Guardian of the Enchanted Forest, protector of all magical creatures dwelling within. Her spirit is said to be infused with the forest's life essence, granting her command over nature and the ability to commune with beasts and plants.",
+    imageUrl: "https://i.imgur.com/bGTnPgK.png",
+    title: "The Guardian of the Enchanted Forest",
+  },
 ];
 
 export const useItemsList = () => {

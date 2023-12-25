@@ -23,30 +23,37 @@ export const ItemCard: FC<{ item: Item }> = ({ item }) => {
         <div className={styles.imageWrapper}>
           <img className={styles.productImage} src={imageUrl} alt={title} />
         </div>
-        <Link className={styles.title} href={`/item-details?id=${id}`}>
-          {title}
-        </Link>
-        <p className={styles.description}>{description}</p>
-        <div className={styles.price}>${price}</div>
-        <button className={styles.button} onClick={() => setIsPopupOpen(true)}>
-          Show QR
-        </button>
-        <button
-          className={styles.button}
-          onClick={() => {
-            setItems((prev) => {
-              if (!prev) return prev;
+        <div className={styles.cardBody}>
+          <Link className={styles.title} href ={`/item-details?id=${id}`}>
+            {title}
+          </Link>
+          <p className={styles.description}>{description}</p>
+          <div className={styles.price}>${price}</div>
+        </div>
+        <div className={styles.cardFooter}>
+          <button
+            className={`${styles.button} ${styles.showQR}`}
+            onClick={() => setIsPopupOpen(true)}
+          >
+            Show QR
+          </button>
+          <button
+            className={`${styles.button} ${styles.deleteItem}`}
+            onClick={() => {
+              setItems((prev) => {
+                if (!prev) return prev;
 
-              return prev.filter((item) => item.id !== id);
-            });
-            // TODO: заменить useState на реактивное хранилище, чтобы все использования useItemsList получали обновления,
-            //  пока просто буду релоадить страницу
+                return prev.filter((item) => item.id !== id);
+              });
+              // TODO: заменить useState на реактивное хранилище, чтобы все использования useItemsList получали обновления,
+              //  пока просто буду релоадить страницу
 
-            router.push("/");
-          }}
-        >
-          Delete Item
-        </button>
+              router.push("/items-list");
+            }}
+          >
+            Delete Item
+          </button>
+        </div>
       </div>
     </Fragment>
   );
