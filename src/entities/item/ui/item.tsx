@@ -8,7 +8,7 @@ import { useRouter } from "next/navigation";
 import { QRCodePopup } from "@/entities/item/ui/qr-code-popup";
 import Link from "next/link";
 
-export const ItemCard: FC<{ item: Item }> = ({ item }) => {
+export const ItemCard: FC<{ item: Item; hideDeleteButton?: boolean }> = ({ item, hideDeleteButton }) => {
   const [, setItems] = useItemsList();
   const [isPopupOpen, setIsPopupOpen] = useState(false);
   const { id, imageUrl, title, price, description } = item;
@@ -37,7 +37,7 @@ export const ItemCard: FC<{ item: Item }> = ({ item }) => {
           >
             Show QR
           </button>
-          <button
+          {!hideDeleteButton && <button
             className={`${styles.button} ${styles.deleteItem}`}
             onClick={() => {
               setItems((prev) => {
@@ -52,7 +52,7 @@ export const ItemCard: FC<{ item: Item }> = ({ item }) => {
             }}
           >
             Delete Item
-          </button>
+          </button>}
         </div>
       </div>
     </Fragment>

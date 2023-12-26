@@ -13,7 +13,7 @@ export default function ItemsList() {
     <ul className={styles.list}>
       {items?.map((item) => (
         <li key={item.id}>
-          <ItemCard item={item} />
+          <ItemCard item={item} hideDeleteButton />
         </li>
       ))}
       <div className={styles.buttons}>

@@ -10,12 +10,17 @@
 }
 
 .imageWrapper {
-  line-height: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  overflow: hidden;
 }
 
 .productImage {
   width: 100%;
-  display: block;
+  height: auto;
+  object-fit: cover;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
